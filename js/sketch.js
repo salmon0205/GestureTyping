@@ -1,7 +1,4 @@
-// ジェスチャーの種類
-// 👍(Thumb_Up), 👎(Thumb_Down), ✌️(Victory), 
-// ☝️(Pointng_Up), ✊(Closed_Fist), 👋(Open_Palm), 
-// 🤟(ILoveYou)
+
 function getCode(left_gesture, right_gesture) {
   let code_array = {
     "typec": 1,
@@ -23,14 +20,17 @@ function getCode(left_gesture, right_gesture) {
 
 function getCharacter(code) {
   const codeToChar = {
-    "44": "a", "81": "b", "1": "c", "18": "d", "12": "e", "14": "f",
-    "13": "g", "73": "h", "74": "i", "34": "j", "85": "k", "3": "l",
-    "55": "m", "57": "n", "4": "o", "71": "p", "17": "q", "68": "r",
-    "11": "s", "77": "t", "33": "u", "5": "v", "6": "w", "22": "x",
-    "75": "y", "66": "z", "8": "space","88": "backspace"
+    "44": "a", "81": "b", "16": "c", "18": "d", "12": "e", "14": "f",
+    "13": "g", "73": "h", "74": "i", "34": "j", "85": "k", "38": "l",
+    "55": "m", "57": "n", "48": "o", "71": "p", "17": "q", "86": "r",
+    "11": "s", "77": "t", "33": "u", "58": "v", "68": "w", "22": "x",
+    "75": "y", "66": "z", "84": " ","88": "backspace"
   };
   return codeToChar[code] || "";
 }
+
+
+
 
 // 入力サンプル文章 
 let sample_texts = [
